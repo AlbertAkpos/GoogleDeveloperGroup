@@ -43,6 +43,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewIntro"
                 app:srcCompat="@mipmap/behind"
+                android:contentDescription="@string/stage_image_description"
                 tools:src="@tools:sample/avatars" />
 
 
@@ -146,15 +147,16 @@
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="40dp"
-                android:layout_height="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="40dp"
                 android:layout_marginBottom="12dp"
                 android:backgroundTint="#00FF00"
                 android:onClick="@{() -> viewModel.onSubmitApplication()}"
-                android:text="Ok"
+                android:text="@string/submit"
                 android:textColor="#FF0000"
                 android:textSize="8sp"
+                android:accessibilityLiveRegion="polite"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EditTextWhy"

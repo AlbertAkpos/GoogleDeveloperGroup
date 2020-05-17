@@ -79,6 +79,7 @@ class GdgListViewModel : ViewModel() {
         fun update(changedFilter: String, isChecked: Boolean): Boolean {
             if (isChecked){
                 currentValue = changedFilter
+                return true
             } else if (currentValue == changedFilter) {
                 currentValue = null
                 return true
